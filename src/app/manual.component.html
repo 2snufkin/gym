@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>My products</h1>
+<p>{{product}}</p>
+<input *ngIf="!isDisabled" type="text" [(ngModel)]="inputText">
+<button name="addme"  [disabled]="isDisabled" (click)="addProduct()">Add product</button>
+<button (click)="product = 'you bought me'"  >Click</button>
+<div *ngFor="let productShow of listProducts">{{productShow}}</div>
+</body>
+</html>
