@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ManualComponent} from "./manual.component";
 import {FormsModule} from "@angular/forms"
+import {ChildComponenet} from "./child.component";
 @NgModule({
   declarations: [
     AppComponent,
     ManualComponent,
+    ChildComponenet
 
   ],
   imports: [

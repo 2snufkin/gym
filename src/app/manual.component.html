@@ -7,9 +7,13 @@
 <body>
 <h1>My products</h1>
 <p>{{product}}</p>
-<input *ngIf="!isDisabled" type="text" [(ngModel)]="inputText">
+<!--property binding: bind to the disable property of the DOM object of button-->
 <button name="addme"  [disabled]="isDisabled" (click)="addProduct()">Add product</button>
+<!--event binding-->
 <button (click)="product = 'you bought me'"  >Click</button>
+<!--structural directives, ng for and ng if-->
+<input *ngIf="!isDisabled" type="text" [(ngModel)]="inputText">
 <div *ngFor="let productShow of listProducts">{{productShow}}</div>
+<app-child [variableFromOutisde]="justANo"></app-child>
 </body>
 </html>

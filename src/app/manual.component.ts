@@ -2,6 +2,7 @@ import {Component} from '@angular/core'
 // export a class
 // decorate with @Component
 // import component from angular core
+// pass it an object with selector and templateURl/template:
 //include the component inside the declaration of the ^NgModule
 @Component(
   {
@@ -17,6 +18,7 @@ export class ManualComponent{
   nameButton: any = "Disabled";
   inputText: string = '';
   listProducts: string[] = []
+  justANo: string = 'one';
 
   constructor() {
     setTimeout(()=>{
